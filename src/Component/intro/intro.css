@@ -99,6 +99,10 @@
         margin: 100px auto 0 auto;
         width: 250px;
     }
+    .hirebtn {
+        display: flex;
+        justify-content: center;
+    }
     
 }
 /* Mobile and tablet view */
@@ -119,6 +123,30 @@
         text-align: justify;
     }
   }
-
+  @media (max-width: 768px) {
+    /* Stack buttons vertically on small screens */
+    a, .hirebtn {
+      width: 100%;
+      max-width: 300px; /* Limit max width */
+      margin: 10px auto; /* Center the buttons and add margin */
+    }
+  
+    /* Adjust icon size for smaller screens */
+    .btnimg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjust padding for very small screens */
+    .hirebtn {
+      padding: 10px 20px;
+    }
+    .btnimg {
+      width: 16px;
+      height: 16px;
+    }
+  }
 
   

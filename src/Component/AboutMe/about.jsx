@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../AboutMe/about.css';
-import about from '../AboutMe/about.png';
+import about from '../AboutMe/firstt.png';
 
 function About() {
   const [activeTab, setActiveTab] = useState('skills');  // 'skills' is now the initial tab
