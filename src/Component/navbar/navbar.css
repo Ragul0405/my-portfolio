@@ -141,3 +141,6 @@
         display: flex
     }
 }
+.navbar a {
+    transition: 0.3s;
+}

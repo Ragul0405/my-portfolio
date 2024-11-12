@@ -14,7 +14,7 @@ function NavBar() {
   return (
     <div className="navparent">
       <nav className="navbar">
-        <img src={rlogo} alt="Logo" className="logo" />
+        <a href='#'><img src={rlogo} alt="Logo" className="logo" /></a>
 
         <h2 className='ragul'>RAGUL<span className='dot'>.</span></h2>
         

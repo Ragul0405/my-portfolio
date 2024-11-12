@@ -1,10 +1,12 @@
 import React, { useRef } from 'react';
 import '../contact/contact.css';
-import fb from '../contact/fb.png';
+import fb from '../contact/nakuru.png';
 import git from '../contact/github.png';
 import linkdin from '../contact/in.png';
 import insta from '../contact/insta.png';
 import emailjs from '@emailjs/browser';
+
+// import nakuri from 'https://www.naukri.com/mnjuser/profile?id=&altresid'
 
 function Contact() {
   const form = useRef();
@@ -40,10 +42,10 @@ function Contact() {
         <button type='submit' value="send" className="submitbtn">Submit</button>
       </form>
       <div className="links">
-        <img src={fb} alt="FaceBook" className='link' />
-        <img src={git} alt="GitHub" className='link' />
-        <img src={linkdin} alt="LinkedIn" className='link' />
-        <img src={insta} alt="InstaGram" className='link' />
+        <img src={fb} alt="Nakuri" className='link' onClick={()=> window.location.href='https://www.naukri.com/mnjuser/profile?id=&altresid'} />
+        <img src={git} alt="GitHub" className='link' onClick={()=> window.location.href='https://github.com/Ragul0405'} />
+        <img src={linkdin} alt="LinkedIn" className='link' onClick={()=> window.location.href='https://www.linkedin.com/in/ragul-sankar/'} />
+        <img src={insta} alt="InstaGram" className='link' onClick={()=> window.location.href='https://www.instagram.com/___ragul___s/'} />
       </div>
     </div>
   );
