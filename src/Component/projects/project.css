@@ -1,0 +1,121 @@
+#works {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem; 
+    margin-top: 50px;
+}
+
+.worktitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.workdesc {
+    font-weight: 200;
+    font-size: 1rem;
+    max-width: 50rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.worksimgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    max-width: 65rem;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.workimage-container {
+    position: relative;
+    margin: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.workimage-container:hover .workimage {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 5px #ff004f;
+}
+
+.workimage {
+    width: 400px;
+    object-fit: cover;
+    height: 20rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background: #ff004f; 
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+
+.workimage-container:hover .layer {
+    opacity: 1;
+}
+
+.layer h3 {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.layer p {
+    color: black; 
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.seemore {
+    padding: 0.5rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: white;
+    font-size: 1rem;
+    margin: 3rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.seemore:hover {
+    background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 585px) {
+    .workimage {
+        width: 100%;
+        height: auto;
+    }
+}

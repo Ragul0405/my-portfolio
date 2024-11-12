@@ -1,0 +1,186 @@
+#about {
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.container {
+  padding-top: 30px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 40%;
+  margin-bottom: 1rem;
+}
+
+.about-col-1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 55%;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.aboutpara {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.aboutme-head {
+  text-align: center;
+  font-size: 48px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+  margin-right: 100px;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: width 0.3s ease;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #ff004f;
+  font-size: 14px;
+}
+
+.tab-contents {
+  display: none; 
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+.tab-links {
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  position: relative;
+  margin-right: 100px;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: width 0.5s ease-in-out;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .about-col-1 img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .aboutpara {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  .aboutme-head {
+    font-size: 36px;
+  }
+
+  .tab-titles {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .tab-links {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .tab-contents ul li span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutme-head {
+    font-size: 28px;
+  }
+
+  .aboutpara {
+    font-size: 0.9rem;
+  }
+
+  .tab-links {
+    font-size: 14px;
+  }
+
+  .tab-contents ul li span {
+    font-size: 12px;
+  }
+}
